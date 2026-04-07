@@ -103,7 +103,7 @@ console.log("Q5: I added the integer and negative to get this number:", addInteg
 // PUT YOUR CODE HERE
 let length = firstName.length;
 let firstInitial = firstName.substring(0, 1);
-let lastInitial = firstName.substring(5);
+let lastInitial = firstName.slice(-1);
 let capitalize = firstName.toUpperCase();
 let weirdInitials = firstName.charAt(firstName.length - 1).toUpperCase() + lastName.charAt(lastName.length - 1).toUpperCase();
 
