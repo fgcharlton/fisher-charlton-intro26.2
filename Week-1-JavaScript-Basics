@@ -105,7 +105,7 @@ let length = firstName.length;
 let firstInitial = firstName.substring(0, 1);
 let lastInitial = firstName.substring(5);
 let capitalize = firstName.toUpperCase();
-let weirdInitials = firstName.substring(5).toUpperCase() + lastName.substring(7).toUpperCase();
+let weirdInitials = firstName.charAt(firstName.length - 1).toUpperCase() + lastName.charAt(lastName.length - 1).toUpperCase();
 
 // Don't forget your console.logs!
 console.log("Q6: Number of characters in first name:", length);
