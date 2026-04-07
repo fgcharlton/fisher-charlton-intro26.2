@@ -213,7 +213,7 @@ console.log("Q9: Stretch Goal: Magic 8 Ball Response:", Magic8BallSwitch);
 let exampleNum = 12.3456;
 
 // Don't forget your console.logs!
-console.log("Q10: Round to the nearest two decimal places:", Math.round(exampleNum * 10 ** 2) / 10 ** 2);
+console.log("Q10: Round to the nearest two decimal places:", exampleNum.toFixed(2));
 
 // ---------- QUESTION 11 ----------
 // Declare two variables named "stringNum" and "mathNum". Assign stringNum a string of numbers and mathNum a number. Create a third variable named "answer11" and have it multiply stringNum and mathNum. Remember to convert your string in order for it to properly calculate!
