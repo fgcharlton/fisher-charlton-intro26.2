@@ -291,7 +291,7 @@ function biggestStringLength(word1, word2) {
   } else if (word2.length > word1.length) {
     return word2.length;
   } else if (word1.length === word2.length) {
-    return "Words are the same length. Word 1 is " + word1.length + "and Word 2 is " + word2.length;
+    return word1.length;
   }
 }
 
