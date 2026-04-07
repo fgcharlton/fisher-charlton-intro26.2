@@ -42,16 +42,11 @@ const negative = -4;
 const notANumber = 4 * 'Days';
 const bigNumber = 12345678910111213141516;
 
-console.log(
-  "Q2: This is a decimal, also called a floating point number: ", floatingPoint);
-console.log(
-  "Q2: This is a whole number, also called an integer: ", integer);
-console.log(
-  "Q2: This is a negative number:", negative);
-console.log(
-  "Q2: You can't mulitply 4 by a word! ", notANumber);
-console.log(
-  "Q2: Stretch Goal: This is a big number:", bigNumber);
+console.log("Q2: This is a decimal, also called a floating point number: ", floatingPoint);
+console.log("Q2: This is a whole number, also called an integer: ", integer);
+console.log("Q2: This is a negative number:", negative);
+console.log("Q2: You can't mulitply 4 by a word! ", notANumber);
+console.log("Q2: Stretch Goal: This is a big number:", bigNumber);
 
 // ---------- Question 3 ----------
 // Declaring and giving boolean values to variables.
@@ -252,7 +247,7 @@ console.log("Q12:", messageString());
 function combineStrings() {
   let string1 = 'Good';
   let string2 = 'Evening';
-  return string1.concat(" ", string2);
+    return string1.concat(" ", string2);
 }
 
 //PUT YOUR CODE HERE
