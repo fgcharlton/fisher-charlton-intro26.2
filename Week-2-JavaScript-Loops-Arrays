@@ -22,13 +22,15 @@
 //  Hello World!
 
 // PUT YOUR CODE HERE
+let num = 3;
+
 function repeat() {
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < num; i++) {
     console.log("Q1: Hello World!");
   }
 }
 
-repeat();
+repeat(num);
 
 // ---------- QUESTION 2 ----------
 // Write a function called 'pyramidCounting' that takes 1 integer parameter and returns the sum of all of the numbers between 0 and the parameter.
