@@ -42,15 +42,17 @@ repeat(intQ1);
 // The mathematical explanation of this is 0+1+2+3+4 = 10.
 
 //PUT YOUR CODE HERE
+let intQ2 = 5;
+
 function pyramidCounting() {
   let sum = 0;
-    for (let i = 0; i < 5; i++) {
-      sum += i;
-    }
-      return sum;
+  for (let i = 0; i < intQ2; i++) {
+    sum += i;
+  }
+    return sum;
 }
 
-console.log("Q2: ", pyramidCounting(4));
+console.log("Q2: ", pyramidCounting(intQ2));
 
 // ---------- QUESTION 3 ----------
 // Write a function called 'noVowels' that take a string parameter and removes vowels from that string using a loop.
