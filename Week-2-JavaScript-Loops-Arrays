@@ -201,15 +201,16 @@ part.splice(3, 0, 1, 2, 3); //Create partial copy
 
 function compareArrays(array1, array2) {
   if (array1.length !== array2.length) {
-    return false; //if lengths do not match, no need to check the rest
+    return false;
   }
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] === array2[i]) {
-        return true; //values match
-      } else if (array1[i] !== array2[i]) {
-        return false; //values do not match
-      }
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false; //values match
+    } else if (array1[i] === array2[i]) {
+      // true
+    }
   }
+  return true;
 }
 
 console.log("Q9 same: ", compareArrays(full, compare));
