@@ -141,7 +141,7 @@ console.log("Q6 not empty: ", arrayChecker(full));
 //  Q7: null
 
 function getElementAt(givenArray, num) {
-  if (givenArray[num] <= givenArray.length - 1) {
+  if (num < givenArray) {
     return givenArray[num];
   } else {
     return null;
