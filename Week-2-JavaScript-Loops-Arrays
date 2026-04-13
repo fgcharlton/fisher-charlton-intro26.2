@@ -360,20 +360,15 @@ console.log("Q14: ", fizzBuzz());
 // PUT YOUR CODE HERE
 let globalVar = "globalVar";
 
-function myFunction1() {
-  let functionVar = "functionVar";
-  return functionVar;
-}
-
-function myFunction2() {
-  if (2 < 3) {
-    let blockVar = "blockVar";
-    return blockVar;
-  }
+function testScope() {
+    let functionVar = "functionVar";
+    return functionVar;
+    {
+        let blockVar = "blockVar";
+        return blockVar;
+    }
 }
 
 console.log("Q15: Global scope: ", globalVar);
 //console.log("Q15: Function scope: ", functionVar);
-console.log("Q15: Function scope: ", myFunction1());
 //console.log("Q15: Block scope: ", blockVar);
-console.log("Q15: Block scope: ", myFunction2());
