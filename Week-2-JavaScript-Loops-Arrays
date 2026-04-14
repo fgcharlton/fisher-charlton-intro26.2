@@ -11,6 +11,7 @@
 
 // console.log("Q#: ", functionName(anyInput))
 
+
 // ---------- QUESTION 1 ----------
 // Write a function called 'repeat' that takes 1 integer parameter and, using a for or while loop, prints out the string "Hello World!" to the console the same number of times as the parameter. NOTE: for this question, since your console log should be inside your function, you only need to call/invoke the function after you write it rather than call/invoke it inside of a console.log.
 
@@ -29,6 +30,7 @@ function repeat(int) {
 }
 
 repeat(3);
+
 // ---------- QUESTION 2 ----------
 // Write a function called 'pyramidCounting' that takes 1 integer parameter and returns the sum of all of the numbers between 0 and the parameter.
 
@@ -41,9 +43,11 @@ repeat(3);
 //PUT YOUR CODE HERE
 function pyramidCounting(int) {
   let sum = 0;
+  
   for (let i = 0; i <= int; i++) {
     sum += i;
   }
+
     return sum;
 }
 
@@ -60,10 +64,12 @@ console.log("Q2: ", pyramidCounting(4));
 // PUT YOUR CODE HERE
 function noVowels(words) {
   let result3 = "";
-    for (let word of words) {
-      result3 += word.replace(/[aeiouy]/gi, "");
-    }
-      return result3;
+
+  for (let word of words) {
+    result3 += word.replace(/[aeiouy]/gi, "");
+  }
+
+    return result3;
 }
 
 console.log("Q3: ", noVowels("adventurous"));
@@ -94,12 +100,14 @@ console.log("Q4: ", vowelCount('i love to code'));
 // PUT YOUR CODE HERE
 function numOfOdds(num) {
   let odds = [];
-    for (let i = 0; i <= num; i++) {
-      if (i % 2 !== 0) {
-        odds.push(i);
-      }
+
+  for (let i = 0; i <= num; i++) {
+    if (i % 2 !== 0) {
+      odds.push(i);
     }
-      return odds.length;
+  }
+
+  return odds.length;
 }
 
 console.log("Q5: ", numOfOdds(15));
@@ -141,7 +149,7 @@ console.log("Q6 not empty: ", arrayChecker(full));
 //  Q7: null
 
 function getElementAt(givenArray, num) {
-  if (num < givenArray) {
+  if (num >= 0 && num < givenArray.length) {
     return givenArray[num];
   } else {
     return null;
@@ -196,8 +204,7 @@ console.log("Q8: original array: ", full);
 
 // PUT YOUR CODE HERE
 const compare = full.slice();
-const part = full.slice();
-part.splice(3, 0, 1, 2, 3); //Create partial copy 
+const part = full.slice(1);
 
 function compareArrays(array1, array2) {
   if (array1.length !== array2.length) {
@@ -231,10 +238,12 @@ const numbers = [10, 3, 4];
 
 function calculateTotal(array) {
   let sum = 0;
-    for (let i = 0; i < array.length; i++) {
-      sum += array[i];
-    }
-      return sum;
+  
+  for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+  }
+    
+  return sum;
 }
 
 console.log("Q10: ", calculateTotal(numbers));
@@ -254,22 +263,26 @@ console.log("Q10: ", calculateTotal(numbers));
 // PUT YOUR CODE HERE
 function findEvens(array) {
   let newArray = [];
+
     for (let i = 0; i <= array.length - 1; i++) {
       if (array[i] % 2 === 0) {
         newArray.push(array[i]);
       }
     }
-      return newArray;
+    
+  return newArray;
 }
 
 function findOdds(array) {
   let newArray = [];
+
   for (let i = 0; i <= array.length - 1; i++) {
     if (array[i] % 2 !== 0) {
       newArray.push(array[i]);
     }
   }
-    return newArray;
+    
+  return newArray;
 }
 
 console.log("Q11 evens: ", findEvens([10, 2, 3, 19, 7, 6, 93]));
@@ -287,10 +300,12 @@ console.log("Q11 odds: ", findOdds([10, 2, 3, 19, 7, 6, 93]));
 // PUT YOUR CODE HERE
 function makeSquares(array) {
   let newArray = [];
+
   for (let i = 0; i <= array.length - 1; i++) {
     newArray.push(array[i] * array[i]);
   }
-    return newArray;
+  
+  return newArray;
 }
 
 console.log("Q12: ", makeSquares([2, 5, 8]));
@@ -321,6 +336,7 @@ function displaySkills(array) {
 console.log("Q13: ");
 displaySkills(skills);
 
+
 // ---------- QUESTION 14 ----------
 // Back in the "old days", the early 2000s, this was a famous technical interview question. Write a function definition that takes NO parameters. The function will loop from 1 to 15 and return an array of numbers. While looping, the function will check if the current value in the loop is divisible by 3, by 5, or by both. If the current value in the loop is divisible by 3, the function will add the string "fizz" to an array. If the current value in the loop is divisible by 5, the function will add the string "buzz" to the array. If the current value in the loop is divisible by both, the function will add the value "fizzbuzz" to the array. If the number isn't divisible by 3, 5, OR both, it will add the number to the array. The function will return the array of values.
 
@@ -332,6 +348,7 @@ displaySkills(skills);
 // PUT YOUR CODE HERE
 function fizzBuzz() {
   let fizzBuzzArray = [];
+ 
   for (let i = 1; i <= 15; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
       fizzBuzzArray.push('fizzbuzz');
@@ -343,7 +360,8 @@ function fizzBuzz() {
       fizzBuzzArray.push(i);
     }
   }
-    return fizzBuzzArray;
+    
+  return fizzBuzzArray;
 }
 
 console.log("Q14: ", fizzBuzz());
@@ -360,13 +378,14 @@ console.log("Q14: ", fizzBuzz());
 // PUT YOUR CODE HERE
 let globalVar = "globalVar";
 
+
 function testScope() {
-    let functionVar = "functionVar";
-    return functionVar;
-    {
-        let blockVar = "blockVar";
-        return blockVar;
-    }
+  let functionVar = "functionVar";
+    console.log("Q15: Function scope: ", functionVar);
+  {
+    let blockVar = "blockVar";
+      console.log("Q15: Block scope: ", blockVar);
+  }
 }
 
 console.log("Q15: Global scope: ", globalVar);
