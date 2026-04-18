@@ -244,5 +244,5 @@ let month = currentDate.getMonth();
 let day = currentDate.getDate();
 
 console.log("Q10: Year:", year);
-console.log("Q10: Month:", month); //0 indexed - so 3 is April
+console.log("Q10: Month:", month + 1); //0 indexed - so 3 is April
 console.log("Q10: Day:", day);
