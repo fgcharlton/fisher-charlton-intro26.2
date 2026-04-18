@@ -120,18 +120,20 @@ console.log("Q5: Color property deleted:", !myPet.hasOwnProperty('color'));
 //{ name: 'Sunny', species: 'dog', color: 'black' }
 
 // PUT YOUR CODE HERE
-const pets = [
-  { name: "Rico", species: "dog", color: "brown" },
-  { name: "Luna", species: "dog", color: "grey" },
-  { name: "Pinto", species: "dog", color: "brown" }
-];
+const pets = [ 
+  {name: "Rico", species: "dog", color: "brown" }, 
+  {name: "Luna", species: "dog", color: "grey" }, 
+  {name: "Pinto", species: "dog", color: "brown" } 
+]; 
 
-function printPets(array) {
-  console.log(array);
-}
+function printPets() { 
+  pets.forEach(function(array) {
+    console.log(array);
+  })
+} 
 
-console.log("Q6:");
-pets.forEach(printPets);
+console.log("Q6:"); 
+printPets();
 
 //---------- QUESTION 7 ----------
 //Write a JavaScript constructor function named Dog that defines a blueprint for creating Dog objects. Each Dog object should include the following properties: name, breed, and age. Using this constructor, create two distinct Dog instances with different values for each property. Finally, use console.log() to display both Dog instances in the console.
