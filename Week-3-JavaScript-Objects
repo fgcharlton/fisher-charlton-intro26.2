@@ -153,12 +153,11 @@ printPets();
 
 // PUT YOUR CODE HERE
 function Dog(name, breed, age) {
-  const obj = {};
-  obj.name = name;
-  obj.breed = breed;
-  obj.age = age;
-  return obj;
+    this.name = name;
+    this.breed = breed;
+    this.age = age;
 }
+
 
 let dog1 = new Dog("Scout", "Australian Sheperd", 4);
 let dog2 = new Dog("Chloe", "Chihuahua ", 8);
