@@ -204,12 +204,20 @@ body{
     margin: 40px;
 }
 
+.projects-header{
+    font-size: 28px;
+}
+
 #Skills{
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
     background-color: white;
     padding: 40px;
     margin: 40px;
+}
+
+.skills-header{
+    font-size: 28px;
 }
 
 p + ul {
