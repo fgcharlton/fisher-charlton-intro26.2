@@ -1,0 +1,225 @@
+#Title{
+    font-size: 56px;
+    color: rgb(79, 79, 79);
+}
+
+.headshot{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.main-nav ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+    font-weight: 700;
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    position: fixed;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 3px;
+    margin: 0px auto;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+    color: rgb(79, 79, 79);
+}
+
+#About{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: left;
+}
+
+.about-header{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about-text{
+    font-size: 16px;
+}
+
+#Experience{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: left;
+}
+
+.experience-header{
+    font-size: 28px;
+}
+
+.box1 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  border: 5px solid lightskyblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.box1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: square;
+}
+
+.box2 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  border: 5px solid lightskyblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.box2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: square;
+}
+
+.box3 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  border: 5px solid lightskyblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.box3 ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: square;
+}
+
+.box4 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  border: 5px solid lightskyblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.box4 ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: square;
+}
+
+#Connect{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+.connect-header{
+    font-size: 28px;
+}
+
+.box5 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  row-gap: 20px;
+  column-gap: 5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.box5 a{
+    font-size: 20px;
+    text-decoration: none; 
+}
+
+.box6 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.box6 a{
+    font-size: 20px;
+    text-decoration: none; 
+}
+
+.github{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+.linkedin{
+    border-radius: 75%;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+#Projects{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+}
+
+.projects-header{
+    font-size: 28px;
+}
+
+#Skills{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+}
+
+.skills-header{
+    font-size: 28px;
+}
+
+p + ul {
+    margin-top: -15px;
+}
