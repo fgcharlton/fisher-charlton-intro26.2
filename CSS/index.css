@@ -208,12 +208,11 @@ body{
     font-size: 28px;
 }
 
-#skillsSection{
+#skills{
     display: flex;
     flex-wrap: wrap;
     width: auto;
     flex-direction: column;
-    list-style-type: square;
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
     background-color: white;
@@ -221,9 +220,10 @@ body{
     margin: 40px;
 }
 
-#skillsSection ul{
+#skills ul{
     margin-top: 0px;
     margin-bottom: 0px;
+    list-style-type: square;
 }
 
 .skills-header{

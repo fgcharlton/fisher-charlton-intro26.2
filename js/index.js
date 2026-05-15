@@ -13,6 +13,7 @@ selectedFooter.appendChild(copyright);
 
 //Create List of Skills
 const skills = ["JavaScript", "R", "SAS", "SQL", "Tableau", "ArcGIS", "Microsoft Office Suite", "Google Suite", "Github"];
+const skillsUl = document.querySelector('#skills ul');
 
 function AddSkills() {
     var skill = document.createDocumentFragment();
@@ -21,8 +22,7 @@ function AddSkills() {
         s.innerHTML = skills[i];
         skill.append(s);
     }
-    var skillsSection = document.getElementById('skillsSection');
-    skillsSection.appendChild(skill);
+    skillsUl.appendChild(skill);
 }
 
 AddSkills();
