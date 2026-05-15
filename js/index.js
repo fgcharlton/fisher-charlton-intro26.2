@@ -3,16 +3,16 @@ const thisYear = today.getFullYear();
 
 //Insert Copyright Text in Footer
 const footer = document.createElement('footer');
-const copyright = document.createElement('p'); 
-copyright.textContent = `\u00A9 Fisher Charlton, ${thisYear}`; 
-footer.appendChild(copyright);
-
 document.body.appendChild(footer);
 
+const selectedFooter = document.querySelector('footer');
+const copyright = document.createElement('p'); 
+copyright.textContent = `\u00A9 Fisher Charlton, ${thisYear}`; 
+
+selectedFooter.appendChild(copyright);
 
 //Create List of Skills
 const skills = ["JavaScript", "R", "SAS", "SQL", "Tableau", "ArcGIS", "Microsoft Office Suite", "Google Suite", "Github"];
-var skillsSection = document.getElementById('UlSkills');
 
 function AddSkills() {
     var skill = document.createDocumentFragment();
@@ -21,8 +21,8 @@ function AddSkills() {
         s.innerHTML = skills[i];
         skill.append(s);
     }
-    var Skills = document.getElementById('Skills');
-    Skills.appendChild(skill);
+    var skillsSection = document.getElementById('skillsSection');
+    skillsSection.appendChild(skill);
 }
 
 AddSkills();

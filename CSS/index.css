@@ -208,7 +208,12 @@ body{
     font-size: 28px;
 }
 
-#skills-section{
+#skillsSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    flex-direction: column;
+    list-style-type: square;
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
     background-color: white;
@@ -216,15 +221,13 @@ body{
     margin: 40px;
 }
 
-.skills-header{
-    font-size: 28px;
+#skillsSection ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#Skills {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    list-style-type: square;
+.skills-header{
+    font-size: 28px;
 }
 
 p + ul {
