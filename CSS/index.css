@@ -220,6 +220,13 @@ body{
     font-size: 28px;
 }
 
+#UlSkills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: square;
+}
+
 p + ul {
     margin-top: -15px;
 }
