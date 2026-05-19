@@ -208,12 +208,22 @@ body{
     font-size: 28px;
 }
 
-#Skills{
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    flex-direction: column;
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
     background-color: white;
     padding: 40px;
     margin: 40px;
+}
+
+#skills ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: square;
 }
 
 .skills-header{
