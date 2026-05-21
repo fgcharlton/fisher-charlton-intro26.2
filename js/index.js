@@ -28,9 +28,9 @@ function AddSkills() {
 AddSkills();
 
 //Allow messages to be submitted
-const messageForm = document.getElementById('leave_message');
+const messageForm = document.querySelector('form[name="leave_message"]');
 
-messageForm.addEventListener("submit", (event) => {
+messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log(event.target.usersName.value);
     console.log(event.target.usersEmail.value);
@@ -38,19 +38,20 @@ messageForm.addEventListener("submit", (event) => {
 
 //Display messages
     const messageSection = document.querySelector('#messages');
-    const messageList = document.querySelector('#messages ul');
+    const messageList = messageSection.querySelector('ul');
 
     const newMessage = document.createElement('li');
     
     newMessage.innerHTML = 
     `<a href="mailto:${event.target.usersEmail.value}" target="_blank" rel="noreferrer">${event.target.usersName.value}</a>
-        <span> ${event.target.usersMessage.value}</span>`
+        <span> ${event.target.usersMessage.value} </span>`
 
 //Add remove button
-    const removeButton = document.createElement('p');
+    const removeButton = document.createElement('button');
 
-    removeButton.innerHTML = 
-    `<button class="removeButton" type="button"><b>remove</b></button>`
+    removeButton.textContent='remove';
+    removeButton.className='removeButton';
+    removeButton.type='button';
 
     removeButton.addEventListener("click", (event) => {
         const entry = event.target.parentNode;
