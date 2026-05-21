@@ -36,6 +36,7 @@ messageForm.addEventListener('submit', (event) => {
     const userEmail = event.target.usersEmail.value;
     const userMessage = event.target.usersMessage.value;
 
+    console.log(userName, userEmail, userMessage);
 //Display messages
     const messageSection = document.querySelector('#messages');
     const messageList = messageSection.querySelector('ul');
