@@ -279,3 +279,12 @@ body{
 p + ul {
     margin-top: -15px;
 }
+
+/*Help with mobile devices*/
+@media (pointer: coarse), (max-width: 768px) {
+    input, select, textarea, button {
+        min-height: 48px;
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+}

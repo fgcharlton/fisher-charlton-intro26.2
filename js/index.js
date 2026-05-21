@@ -32,9 +32,9 @@ const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(event.target.usersName.value);
-    console.log(event.target.usersEmail.value);
-    console.log(event.target.usersMessage.value);
+    const userName = event.target.usersName.value;
+    const userEmail = event.target.usersEmail.value;
+    const userMessage = event.target.usersMessage.value;
 
 //Display messages
     const messageSection = document.querySelector('#messages');
@@ -57,7 +57,7 @@ messageForm.addEventListener('submit', (event) => {
         const entry = event.target.parentNode;
 
         if(entry) {
-            newMessage.remove();
+            entry.remove();
         }
     });
 
