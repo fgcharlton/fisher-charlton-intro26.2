@@ -237,10 +237,12 @@ body{
     padding: 40px;
     margin: 40px;
     text-align: center;
+    line-height: 3;
 }
 
 .messageMe-header{
     font-size: 28px;
+    line-height: 1.2;
 }
 
 .submitButton{
