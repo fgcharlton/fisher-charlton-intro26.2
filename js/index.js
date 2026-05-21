@@ -23,6 +23,48 @@ function AddSkills() {
         skill.append(s);
     }
     skillsUl.appendChild(skill);
-}
+};
 
 AddSkills();
+
+//Allow messages to be submitted
+const messageForm = document.getElementById('leave_message');
+
+messageForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log(event.target.usersName.value);
+    console.log(event.target.usersEmail.value);
+    console.log(event.target.usersMessage.value);
+
+//Display messages
+    const messageSection = document.querySelector('#messages');
+    const messageList = document.querySelector('#messages ul');
+
+    const newMessage = document.createElement('li');
+    
+    newMessage.innerHTML = 
+    `<a href="mailto:${event.target.usersEmail.value}" target="_blank" rel="noreferrer">${event.target.usersName.value}</a>
+        <span> ${event.target.usersMessage.value}</span>`
+
+//Add remove button
+    const removeButton = document.createElement('p');
+
+    removeButton.innerHTML = 
+    `<button class="removeButton" type="button"><b>remove</b></button>`
+
+    removeButton.addEventListener("click", (event) => {
+        const entry = event.target.parentNode;
+
+        if(entry) {
+            newMessage.remove();
+        }
+    });
+
+//Appened remove button
+    newMessage.appendChild(removeButton);
+
+//Append new messages
+    messageList.appendChild(newMessage);
+
+messageForm.reset();
+});

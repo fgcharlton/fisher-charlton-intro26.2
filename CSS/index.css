@@ -230,6 +230,52 @@ body{
     font-size: 28px;
 }
 
+#messageMe{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+.messageMe-header{
+    font-size: 28px;
+}
+
+.submitButton{
+    width: 100px; 
+    height: 40px;
+}
+
+.removeButton{
+    width: 100px; 
+    height: 40px;
+}
+
+#messages{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+.messages-header{
+    font-size: 28px;
+}
+
+#messages ul li{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: square;
+    line-height: 1.5; 
+    list-style-position: relative;
+    list-style-position: inside; 
+    text-align: center;
+}
+
 p + ul {
     margin-top: -15px;
 }
