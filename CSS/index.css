@@ -208,6 +208,12 @@ body{
     font-size: 28px;
 }
 
+#Projects ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: square;
+}
+
 #skills{
     display: flex;
     flex-wrap: wrap;
