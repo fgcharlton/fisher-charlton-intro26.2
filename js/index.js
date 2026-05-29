@@ -86,15 +86,15 @@ fetch("https://api.github.com/users/fgcharlton/repos")
 
         //Loop repositories
         for(let i = 0; i < repositories.length; i ++){
-            let newRepo = document.createElement('li');
-            newRepo.innerHTML = `${repositories[i].name}`;
+            let project = document.createElement('li');
+            project.innerText = `${repositories[i].name}`;
             
             //Append to project list 
-            projectList.append(newRepo);
+            projectList.append(project);
             }
         }
     )
-    .catch(error => console.log(error))
+    .catch(error => console.log('Unable to load projects'))
 
 
 

@@ -209,6 +209,9 @@ body{
 }
 
 #Projects ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
     margin-top: 0px;
     margin-bottom: 0px;
     list-style-type: square;
