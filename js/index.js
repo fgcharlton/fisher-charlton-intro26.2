@@ -90,11 +90,11 @@ fetch("https://api.github.com/users/fgcharlton/repos")
             project.innerText = `${repositories[i].name}`;
             
             //Append to project list 
-            projectList.append(project);
+            projectList.appendChild(project);
             }
         }
     )
-    .catch(error => console.log('Unable to load projects'))
+    .catch(error => console.log('Unable to load projects', error))
 
 
 
