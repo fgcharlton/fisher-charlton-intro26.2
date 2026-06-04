@@ -47,6 +47,20 @@ body{
     font-weight: bold;
 }
 
+.temperatureButton{
+    width: 200px; 
+    height: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.precipitationButton{
+    width: 200px; 
+    height: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
 #About{
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
