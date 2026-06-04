@@ -102,7 +102,9 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
     .then(temperature => {
         console.log(temperature);
         
-        //Create temperatureSection variable
+        //Create temperatureButton
+        const weatherSection = document.querySelector('#Weather');
+
         const temperatureButton = document.createElement('button');
 
         temperatureButton.textContent="What's the temperature?";
@@ -117,7 +119,7 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
             Low of ${temperature.daily.temperature_2m_min}${temperature.daily_units.temperature_2m_min}.`;
         }
         });
-        Weather.appendChild(temperatureButton);
+        weatherSection.appendChild(temperatureButton);
     })
     .catch(error => console.log('Unable to load temperature Open API', error))
 
@@ -128,7 +130,8 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
     .then(precipitation => {
         console.log(precipitation);
         
-        //Create precipitationSection variable
+        //Create precipitation button
+        const weatherSection = document.querySelector('#Weather');
         const precipitationButton = document.createElement('button');
 
         precipitationButton.textContent="What's the chance of rain?";
@@ -139,9 +142,9 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
         const entry = event.target.parentNode;
 
         if(entry) {
-        precipitationButton.textContent = `Today's chance of precipitation is ${precipitation.daily.precipitation_probability_max}${precipitation.daily_units.precipitation_probability_max}.`;
+        precipitationButton.textContent = `Precipitation chance is ${precipitation.daily.precipitation_probability_max}${precipitation.daily_units.precipitation_probability_max}.`;
         }
         });
-        Weather.appendChild(precipitationButton);
+        weatherSection.appendChild(precipitationButton);
     })
     .catch(error => console.log('Unable to load precipitation Open API', error))
