@@ -70,3 +70,33 @@ messageForm.addEventListener('submit', (event) => {
 
 messageForm.reset();
 });
+
+//Fetch API
+fetch("https://api.github.com/users/fgcharlton/repos")
+    .then(response => response.text())
+    .then(response => {
+        const repositories = JSON.parse(response);
+        console.log(repositories);
+        
+        //Create projectSection variable
+        const projectSection = document.querySelector('#Projects');
+
+        //Create projectList 
+        const projectList = projectSection.querySelector('ul');
+
+        //Loop repositories
+        for(let i = 0; i < repositories.length; i ++){
+            let project = document.createElement('li');
+            project.innerText = `${repositories[i].name}`;
+            
+            //Append to project list 
+            projectList.appendChild(project);
+            }
+        }
+    )
+    .catch(error => console.log('Unable to load projects', error))
+
+
+
+
+
