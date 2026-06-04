@@ -87,7 +87,7 @@ fetch("https://api.github.com/users/fgcharlton/repos")
         //Loop repositories
         for(let i = 0; i < repositories.length; i ++){
             let project = document.createElement('li');
-            project.innerHTML = `<a href="https://github.com/fgcharlton/${repositories[i].name}">${repositories[i].name}`;
+            project.innerHTML = `<a href="https://github.com/fgcharlton/${repositories[i].name}">${repositories[i].name}</a>`;
             
             //Append to project list 
             projectList.appendChild(project);
