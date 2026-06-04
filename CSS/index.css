@@ -33,6 +33,20 @@ body{
     color: rgb(79, 79, 79);
 }
 
+#Weather{
+    color: rgb(79, 79, 79);
+    border: 5px solid rgb(79, 79, 79);
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    text-align: left;
+}
+
+.weather-header{
+    font-size: 28px;
+    font-weight: bold;
+}
+
 #About{
     color: rgb(79, 79, 79);
     border: 5px solid rgb(79, 79, 79);
