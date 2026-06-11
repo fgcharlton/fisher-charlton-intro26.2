@@ -17,8 +17,8 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
         const entry = event.target.parentNode;
 
         if(entry) {
-            temperatureButton.textContent = `High of ${temperature.daily.temperature_2m_max}${temperature.daily_units.temperature_2m_max}. 
-            Low of ${temperature.daily.temperature_2m_min}${temperature.daily_units.temperature_2m_min}.`;
+            temperatureButton.textContent = `High of ${temperature.daily.temperature_2m_max[0]}${temperature.daily_units.temperature_2m_max}. 
+            Low of ${temperature.daily.temperature_2m_min[0]}${temperature.daily_units.temperature_2m_min}.`;
         }
         });
         weatherSection.appendChild(temperatureButton);
@@ -44,7 +44,7 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=36.0726&longitude=-79.792
         const entry = event.target.parentNode;
 
         if(entry) {
-        precipitationButton.textContent = `Precipitation chance is ${precipitation.daily.precipitation_probability_max}${precipitation.daily_units.precipitation_probability_max}.`;
+        precipitationButton.textContent = `Precipitation chance is ${precipitation.daily.precipitation_probability_max[0]}${precipitation.daily_units.precipitation_probability_max}.`;
         }
         });
         weatherSection.appendChild(precipitationButton);
